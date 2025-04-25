@@ -1,0 +1,16 @@
+project:
+  type: website
+
+website:
+  title: "ImageJ Macro Workshop"
+  sidebar:
+    style: floating
+
+format:
+  html:
+    toc: true
+    toc-depth: 6
+    toc-location: right
+    theme: cosmo
+    css: styles.css
+    table-hover: true

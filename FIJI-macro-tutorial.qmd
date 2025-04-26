@@ -1,13 +1,5 @@
 ---
 title: "Writing Your First ImageJ Macro"
-format:
-  html:
-    toc: true
-    toc-depth: 6        # Optional: How many heading levels to include
-    toc-location: right # or "left" if you prefer
-    theme: cosmo
-    css: styles.css
-    table-hover: true
 ---
 
 ## 🧠 What is a Macro?
@@ -71,7 +63,7 @@ I clearly wrote this a few years ago... ChatGPT is also a great place to get hel
 
 ## ✏️ Let's Create a Macro
 
-Let’s write a macro, a small one that may make day to day analysis easier:
+Let’s write a macro, a small one first. Go to this folder and download the [sample images](https://github.com/MarnieMaddock/FIJI-macro-tutorial/tree/main/sample-images).
 
 1.  Open FIJI
 
@@ -329,7 +321,7 @@ Variables do not need to be in quotes. Strings must be in quotes. A variable can
 
 ![](quarto-images/output-files1.png){fig-align="left" width="500"}
 
-::: {.callout-caution title="Challenge: Fix the Mistake"}
+::: {.callout-caution title="Fix the Mistake"}
 Create a macro that stores a name in a variable and prints it. What is wrong with the following code? What is the error message?
 
 ```         
@@ -375,7 +367,7 @@ This error occurs because the macro is trying to assign a variable (mitochondria
 </details>
 :::
 
-::: {.callout-caution title="Challenge: Fix the Mistake"}
+::: {.callout-caution title="Fix the Mistake"}
 Create a new macro with the following code:
 
 ```         
@@ -402,7 +394,7 @@ This error occurs because the macro is missing a semicolon at the end of the fir
 </details>
 :::
 
-::: {.callout-caution title="Challenge: Fix the Mistake"}
+::: {.callout-caution title="Fix the Mistake"}
 Create a new macro with the following code:
 
 ```         
@@ -429,7 +421,7 @@ This error occurs because the macro is missing a closing parenthesis at the end 
 </details>
 :::
 
-::: {.callout-caution title="Challenge: Fix the Mistake"}
+::: {.callout-caution title="Fix the Mistake"}
 Create a new macro with the following code:
 
 ```         
@@ -453,7 +445,7 @@ Result: the final print statement will output a string, not a number. This won't
 </details>
 :::
 
-::: {.callout-caution title="Challenge: Fix the Mistake"}
+::: {.callout-caution title="Fix the Mistake"}
 Try this macro code:
 
 ```         
@@ -902,7 +894,7 @@ After that, i becomes 3, and the loop stops — because the condition i \< 3 is 
 
 </details>
 
-::: {.callout-caution title="Challenge: What Does `i` Do?"}
+::: {.callout-important title="Challenge: What Does `i` Do?"}
 Let’s explore what the variable `i` does in a loop.
 
 Try running this macro:
@@ -1020,7 +1012,7 @@ Breakdown:
 </details>
 :::
 
-::: {.callout-caution title="Challenge: Apply Filters to Multiple Channels"}
+::: {.callout-important title="Challenge: Apply Filters to Multiple Channels"}
 You’ve split a multi-channel image and want to process only selected channels, like C1 and C3.
 
 Use a loop to:
@@ -1103,7 +1095,7 @@ if (slices > 1) {
 
 This code checks if the number of slices is greater than 1. If it is, it runs a max projection and renames the image. If not, it prints a message saying no projection is needed.
 
-::: {.callout-caution title="Challenge: Use If Else Statements"}
+::: {.callout-important title="Challenge: Use If Else Statements"}
 Your task is to write a macro that:
 
 -   Gets the number of Z slices in the image.
@@ -1153,7 +1145,7 @@ This code checks the number of slices in the image. If there are more than one s
 
 Let's try and integrate some concepts we explored earlier:
 
-::: {.callout-caution title="Challenge: Apply a Filter Based on User Input"}
+::: {.callout-important title="Challenge: Apply a Filter Based on User Input"}
 Let’s give the user a choice! Open sample-image1.tif. Use a dialog box to let the user enter a number between 1 and 10.
 
 -   If the number is **5 or greater**, apply a **Unsharp Mask**\
@@ -1321,7 +1313,7 @@ Let’s say you have 3 channels (e.g., C1, C2, C3) and you want to choose which 
 
 5.  Use if, else if, and else inside the loop to apply the chosen filter to each channel
 
-::: {.callout-caution title="Challenge: Apply a Chosen Filter to All Channels"}
+::: {.callout-important title="Challenge: Apply a Chosen Filter to All Channels"}
 Your task is to:
 
 1.  Ask the user which filter to apply: `"Gaussian"`, `"Median"`, or `"None"`
@@ -1437,7 +1429,7 @@ We’ll create:
 
 3.  A separate filter choice for each channel using if / else if / else inside the loop
 
-::: {.callout-caution title="Challenge: Apply Different Filters Per Channel"}
+::: {.callout-important title="Challenge: Apply Different Filters Per Channel"}
 Let the user choose **a specific filter for each channel** using dropdown menus, then loop through each channel and apply the correct filter.
 
 ```         
@@ -1634,7 +1626,7 @@ updateResults();
 ```
 :::
 
-::: {.callout-caution title="Challenge: Add a New Column to the Results Table"}
+::: {.callout-important title="Challenge: Add a New Column to the Results Table"}
 After analyzing particles, calculate a new column called `"Half Area"` → it should be half of the `"Area"` column values.
 
 Complete the loop:
@@ -1713,7 +1705,7 @@ run("Set Measurements...", "area mean standard modal min centroid center perimet
 I have a setMeasurements() function in every single macro I make. This way the results table will include the same measurements each time I or someone else runs it. This makes data analysis pipeline more streamlined - especially if you are inserting data into analysis tools like R or Python.
 :::
 
-::: {.callout-caution title="Challenge: Customize the Measurements"}
+::: {.callout-important title="Challenge: Customize the Measurements"}
 You want to measure **only the mean intensity and perimeter** of the image.
 Use `setMeasurements()` to control what gets added to the Results Table.
 
@@ -2168,7 +2160,11 @@ If you are sharing your code, you may want to add a license. A license tells oth
 -   ✅ Whether they can reuse it in their own projects
 -   ✅ How they should give you credit
 
-Some popular licenses include: - **MIT License** – very open and permissive - **GPL (General Public License)** – requires derived code to also be open - **Creative Commons (e.g. CC-BY)** – common for educational material and data
+Some popular licenses include: 
+
+- **MIT License** – very open and permissive 
+- **GPL (General Public License)** – requires derived code to also be open 
+- **Creative Commons (e.g. CC-BY)** – common for educational material and data
 
 > 🧭 You can explore license types at [choosealicense.com](https://choosealicense.com)
 
@@ -2214,30 +2210,32 @@ Here’s how to get started:
 
 Writing macros is a learning process, and errors are very normal! When something goes wrong, ImageJ usually gives you an error message that helps you figure out what’s wrong.
 
--   ✅ **Spelling** — Make sure all function names (like `run`, `Dialog.create`) and variable names are spelled correctly.
+-   **Spelling** — Make sure all function names (like `run`, `Dialog.create`) and variable names are spelled correctly.
 
--   ✅ **Brackets** — Check that every opening `(`, `{`, or `[` has a matching closing one.
+-   **Brackets** — Check that every opening `(`, `{`, or `[` has a matching closing one.
 
--   ✅ **Capitalization** — `Dialog.getString()` is not the same as `dialog.getstring()` — ImageJ is case-sensitive!
+-   **Capitalization** — `Dialog.getString()` is not the same as `dialog.getstring()` — ImageJ is case-sensitive!
 
--   ✅ **Semicolons** — Most lines must end with a `;`. Forgetting one is one of the most common causes of errors.
+-   **Semicolons** — Most lines must end with a `;`. Forgetting one is one of the most common causes of errors.
 
--   ✅ **Quotes for Strings** — Strings must be wrapped in double quotes: `"Hello"` not `Hello`.
+-   **Quotes for Strings** — Strings must be wrapped in double quotes: `"Hello"` not `Hello`.
 
--   ✅ **Line Numbers in Errors** — The error message usually tells you what line it occurred on, **but it's not always exact** — check the lines just above and below too.
+-   **Line Numbers in Errors** — The error message usually tells you what line it occurred on, **but it's not always exact** — check the lines just above and below too.
 
--   🐞 **Start small** — If you’re stuck, comment out sections of your macro and run it in smaller chunks.
+-   **Start small** — If you’re stuck, comment out sections of your macro and run it in smaller chunks.
 
--   🔍 **Use `print()` for debugging** — You can print variables to the log to see what values are being stored.
+-   **Use `print()` for debugging** — You can print variables to the log to see what values are being stored.
 
--   If you don't know where to start, or how to write a piece of code, start by using the macro recorder.The macro recorder will record your actions in FIJI and give you a starting point for writing your own code that can be adjusted to become automated.
+- use **wait()** to slow down the macro if it is running too fast. This can help you see what is happening at each step. Is useful for debugging and for running your analysis.
 
--   🔁 Test macros on a sample image — Before running on a full dataset, make sure the macro works on a single image.
+-   If you don't know where to start, or how to write a piece of code, start by using the **macro recorder**. The macro recorder will record your actions in FIJI and give you a starting point.
+
+-   Before running on a full dataset, make sure the macro works on a **single image**.
 
 -   If your macro is running **slowly**, restart FIJI or your computer to clear memory. Often macros run faster when you have less open, so if you have images building up that do not close, add lines of code that close the image before looping to the next image.
 
 ::: {.callout-note title=""}
-I find my macros run much faster if I do not have Google chrome open, chrome eats up so much of your RAM :(
+I find my macros run much faster if I do not have Google chrome open, chrome eats up so much of your RAM...
 :::
 
 ------------------------------------------------------------------------
@@ -2246,7 +2244,7 @@ I find my macros run much faster if I do not have Google chrome open, chrome eat
 
 If you have .lif files, these need to be converted to individual .tif images prior to batch processing.
 
-If you are using .lif files, you can use the `Lif-to-Tif` macro to convert them to .tif files. This macro will open the .lif file and save each image in the file as a separate .tif file. This macro was created by Alexandre Hego: alexandre.hego\@uliege.be. I have added this macro to my GitHub page for ease of use.
+If you are using .lif files, you can use the `Lif-to-Tif` macro to convert them to .tif files. This macro will open the .lif file and save each image in the file as a separate .tif file. This macro was created by Alexandre Hego: alexandre.hego\@uliege.be. It works really well for .lif project files, including .lif files with tilescans. I have added this macro to my GitHub page for accessibility [Lif-to-Tif](https://github.com/MarnieMaddock/Lif-to-Tif).
 
 ------------------------------------------------------------------------
 
@@ -2278,14 +2276,14 @@ If you’ve found this resource useful, please consider **sharing it with your c
 
 I’m always looking to improve this guide. If you:
 
--   🧩 Found a bug or error
+-   🐛 Found a bug or error in the macro code
 -   ❓ Think a topic could be explained better
 -   📚 Have a suggestion for a new section or feature
 -   💡 Created your own macro and want to contribute it
 
 ...I would love to hear from you!
 
-You can submit feedback or suggest changes by [opening an issue on GitHub](ADD_LINK_HERE).
+You can submit feedback or suggest changes by [opening an issue on GitHub](https://github.com/MarnieMaddock/FIJI-macro-tutorial/issues).
 
 > 🛠️ Don't worry if you're not a GitHub pro — even just pointing out a typo is helpful!
 
@@ -2299,6 +2297,10 @@ If you have any questions, comments, or suggestions, please feel free to reach o
 -   💻 [GitHub](https://github.com/MarnieMaddock)
 -   🐦 [Twitter](https://x.com/marniemaddock)
 -   🌐 [ORCID](https://orcid.org/0000-0001-6393-4837)
+
+The FIJI-macro-tutorial is housed [here](https://marniemaddock.github.io/FIJI-macro-tutorial/FIJI-macro-tutorial.html)
+
+The repository for this project is available [here](https://github.com/MarnieMaddock/FIJI-macro-tutorial)
 
 ## LICENSE
 

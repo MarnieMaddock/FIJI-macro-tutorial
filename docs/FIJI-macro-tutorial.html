@@ -141,11 +141,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -184,6 +180,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">LICENSE</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -273,7 +273,7 @@ Note
 </section>
 <section id="lets-create-a-macro" class="level2">
 <h2 class="anchored" data-anchor-id="lets-create-a-macro">✏️ Let’s Create a Macro</h2>
-<p>Let’s write a macro, a small one that may make day to day analysis easier:</p>
+<p>Let’s write a macro, a small one first. Go to this folder and download the <a href="https://github.com/MarnieMaddock/FIJI-macro-tutorial/tree/main/sample-images">sample images</a>.</p>
 <ol type="1">
 <li><p>Open FIJI</p></li>
 <li><p>Drag and drop the sample Image “sample-image1” into FIJI</p></li>
@@ -573,13 +573,13 @@ Tip
 <p><img src="quarto-images/output-files1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="500"></p>
 </figure>
 </div>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: Fix the Mistake">
+<div class="callout callout-style-default callout-caution callout-titled" title="Fix the Mistake">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Challenge: Fix the Mistake
+Fix the Mistake
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -610,13 +610,13 @@ print(name)</code></pre>
 </details>
 </div>
 </div>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: Fix the Mistake">
+<div class="callout callout-style-default callout-caution callout-titled" title="Fix the Mistake">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Challenge: Fix the Mistake
+Fix the Mistake
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -636,13 +636,13 @@ print(title);  // ✅ Prints the value of the variable</code></pre>
 </details>
 </div>
 </div>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: Fix the Mistake">
+<div class="callout callout-style-default callout-caution callout-titled" title="Fix the Mistake">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Challenge: Fix the Mistake
+Fix the Mistake
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -662,13 +662,13 @@ print(directory);  // ✅ Prints the value of the variable</code></pre>
 </details>
 </div>
 </div>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: Fix the Mistake">
+<div class="callout callout-style-default callout-caution callout-titled" title="Fix the Mistake">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Challenge: Fix the Mistake
+Fix the Mistake
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -687,13 +687,13 @@ print(threshold);</code></pre>
 </details>
 </div>
 </div>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: Fix the Mistake">
+<div class="callout callout-style-default callout-caution callout-titled" title="Fix the Mistake">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Challenge: Fix the Mistake
+Fix the Mistake
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1184,7 +1184,7 @@ Loops and Conditions
 </table>
 <p>After that, i becomes 3, and the loop stops — because the condition i &lt; 3 is no longer true.</p>
 </details>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: What Does `i` Do?">
+<div class="callout callout-style-default callout-important callout-titled" title="Challenge: What Does `i` Do?">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1267,7 +1267,7 @@ for (i = 0; i &lt; stains.length; i++) {
 </details>
 </div>
 </div>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: Apply Filters to Multiple Channels">
+<div class="callout callout-style-default callout-important callout-titled" title="Challenge: Apply Filters to Multiple Channels">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1347,7 +1347,7 @@ for (i = 0; i &lt; channelsToProcess.length; i++) {
 }</code></pre>
 </div>
 <p>This code checks if the number of slices is greater than 1. If it is, it runs a max projection and renames the image. If not, it prints a message saying no projection is needed.</p>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: Use If Else Statements">
+<div class="callout callout-style-default callout-important callout-titled" title="Challenge: Use If Else Statements">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1394,7 +1394,7 @@ if (slices &gt; 1) {
 </div>
 </div>
 <p>Let’s try and integrate some concepts we explored earlier:</p>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: Apply a Filter Based on User Input">
+<div class="callout callout-style-default callout-important callout-titled" title="Challenge: Apply a Filter Based on User Input">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1540,7 +1540,7 @@ if (choice == "Gaussian") {
 <li><p>Use a for loop to loop through each channel</p></li>
 <li><p>Use if, else if, and else inside the loop to apply the chosen filter to each channel</p></li>
 </ol>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: Apply a Chosen Filter to All Channels">
+<div class="callout callout-style-default callout-important callout-titled" title="Challenge: Apply a Chosen Filter to All Channels">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1641,7 +1641,7 @@ for (i = 0; i &lt; channels.length; i++) {
 <li><p>A for loop to go through each channel</p></li>
 <li><p>A separate filter choice for each channel using if / else if / else inside the loop</p></li>
 </ol>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: Apply Different Filters Per Channel">
+<div class="callout callout-style-default callout-important callout-titled" title="Challenge: Apply Different Filters Per Channel">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1849,7 +1849,7 @@ for (i = 0; i &lt; nResults; i++) {
 <pre><code>setResult("Area", 0, 999);  // Change row 0's "Area" value to 999
 updateResults();</code></pre>
 </div>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: Add a New Column to the Results Table">
+<div class="callout callout-style-default callout-important callout-titled" title="Challenge: Add a New Column to the Results Table">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1914,7 +1914,7 @@ updateResults();</code></pre>
 <div class="{callout-tip}">
 <p>I have a setMeasurements() function in every single macro I make. This way the results table will include the same measurements each time I or someone else runs it. This makes data analysis pipeline more streamlined - especially if you are inserting data into analysis tools like R or Python.</p>
 </div>
-<div class="callout callout-style-default callout-caution callout-titled" title="Challenge: Customize the Measurements">
+<div class="callout callout-style-default callout-important callout-titled" title="Challenge: Customize the Measurements">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -2329,16 +2329,17 @@ You can upload your macro scripts, images, and tutorials so others can use and c
 <h2 class="anchored" data-anchor-id="troubleshooting">🛠️ Troubleshooting</h2>
 <p>Writing macros is a learning process, and errors are very normal! When something goes wrong, ImageJ usually gives you an error message that helps you figure out what’s wrong.</p>
 <ul>
-<li><p>✅ <strong>Spelling</strong> — Make sure all function names (like <code>run</code>, <code>Dialog.create</code>) and variable names are spelled correctly.</p></li>
-<li><p>✅ <strong>Brackets</strong> — Check that every opening <code>(</code>, <code>{</code>, or <code>[</code> has a matching closing one.</p></li>
-<li><p>✅ <strong>Capitalization</strong> — <code>Dialog.getString()</code> is not the same as <code>dialog.getstring()</code> — ImageJ is case-sensitive!</p></li>
-<li><p>✅ <strong>Semicolons</strong> — Most lines must end with a <code>;</code>. Forgetting one is one of the most common causes of errors.</p></li>
-<li><p>✅ <strong>Quotes for Strings</strong> — Strings must be wrapped in double quotes: <code>"Hello"</code> not <code>Hello</code>.</p></li>
-<li><p>✅ <strong>Line Numbers in Errors</strong> — The error message usually tells you what line it occurred on, <strong>but it’s not always exact</strong> — check the lines just above and below too.</p></li>
-<li><p>🐞 <strong>Start small</strong> — If you’re stuck, comment out sections of your macro and run it in smaller chunks.</p></li>
-<li><p>🔍 <strong>Use <code>print()</code> for debugging</strong> — You can print variables to the log to see what values are being stored.</p></li>
-<li><p>If you don’t know where to start, or how to write a piece of code, start by using the macro recorder.The macro recorder will record your actions in FIJI and give you a starting point for writing your own code that can be adjusted to become automated.</p></li>
-<li><p>🔁 Test macros on a sample image — Before running on a full dataset, make sure the macro works on a single image.</p></li>
+<li><p>*Spelling** — Make sure all function names (like <code>run</code>, <code>Dialog.create</code>) and variable names are spelled correctly.</p></li>
+<li><p>*Brackets** — Check that every opening <code>(</code>, <code>{</code>, or <code>[</code> has a matching closing one.</p></li>
+<li><p>*Capitalization** — <code>Dialog.getString()</code> is not the same as <code>dialog.getstring()</code> — ImageJ is case-sensitive!</p></li>
+<li><p>*Semicolons** — Most lines must end with a <code>;</code>. Forgetting one is one of the most common causes of errors.</p></li>
+<li><p>*Quotes for Strings** — Strings must be wrapped in double quotes: <code>"Hello"</code> not <code>Hello</code>.</p></li>
+<li><p>*Line Numbers in Errors<strong> — The error message usually tells you what line it occurred on, </strong>but it’s not always exact** — check the lines just above and below too.</p></li>
+<li><p><strong>Start small</strong> — If you’re stuck, comment out sections of your macro and run it in smaller chunks.</p></li>
+<li><p><strong>Use <code>print()</code> for debugging</strong> — You can print variables to the log to see what values are being stored.</p></li>
+<li><p>use <strong>wait()</strong> to slow down the macro if it is running too fast. This can help you see what is happening at each step. Is useful for debugging and for running your analysis.</p></li>
+<li><p>If you don’t know where to start, or how to write a piece of code, start by using the macro recorder.The macro recorder will record your actions in FIJI and give you a starting point.</p></li>
+<li><p>Before running on a full dataset, make sure the macro works on a single image.</p></li>
 <li><p>If your macro is running <strong>slowly</strong>, restart FIJI or your computer to clear memory. Often macros run faster when you have less open, so if you have images building up that do not close, add lines of code that close the image before looping to the next image.</p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled" title="">
@@ -2351,7 +2352,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>I find my macros run much faster if I do not have Google chrome open, chrome eats up so much of your RAM :(</p>
+<p>I find my macros run much faster if I do not have Google chrome open, chrome eats up so much of your RAM…</p>
 </div>
 </div>
 <hr>
@@ -2382,13 +2383,13 @@ Note
 <p>If you’ve found this resource useful, please consider <strong>sharing it with your colleagues, students, or lab mates</strong>. The more people who benefit from it, the better!</p>
 <p>I’m always looking to improve this guide. If you:</p>
 <ul>
-<li>🧩 Found a bug or error</li>
+<li>🐛 Found a bug or error in the macro code</li>
 <li>❓ Think a topic could be explained better</li>
 <li>📚 Have a suggestion for a new section or feature</li>
 <li>💡 Created your own macro and want to contribute it</li>
 </ul>
 <p>…I would love to hear from you!</p>
-<p>You can submit feedback or suggest changes by <a href="ADD_LINK_HERE">opening an issue on GitHub</a>.</p>
+<p>You can submit feedback or suggest changes by <a href="https://github.com/MarnieMaddock/FIJI-macro-tutorial/issues">opening an issue on GitHub</a>.</p>
 <blockquote class="blockquote">
 <p>🛠️ Don’t worry if you’re not a GitHub pro — even just pointing out a typo is helpful!</p>
 </blockquote>
@@ -2403,6 +2404,8 @@ Note
 <li>🐦 <a href="https://x.com/marniemaddock">Twitter</a></li>
 <li>🌐 <a href="https://orcid.org/0000-0001-6393-4837">ORCID</a></li>
 </ul>
+<p>The FIJI-macro-tutorial is housed <a href="https://marniemaddock.github.io/FIJI-macro-tutorial/FIJI-macro-tutorial.html">here</a></p>
+<p>The repository for this project is available <a href="https://github.com/MarnieMaddock/FIJI-macro-tutorial">here</a></p>
 </section>
 <section id="license" class="level2">
 <h2 class="anchored" data-anchor-id="license">LICENSE</h2>

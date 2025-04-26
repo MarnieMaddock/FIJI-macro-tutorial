@@ -11,9 +11,9 @@ format:
   html:
     toc: true
     toc-depth: 6
-    toc-location: right
+    toc-location: left
     theme: cosmo
     css: styles.css
     table-hover: true
-
+    sidebar: true
   

@@ -2287,7 +2287,12 @@ exit("Done");</code></pre>
 <li>✅ Whether they can reuse it in their own projects</li>
 <li>✅ How they should give you credit</li>
 </ul>
-<p>Some popular licenses include: - <strong>MIT License</strong> – very open and permissive - <strong>GPL (General Public License)</strong> – requires derived code to also be open - <strong>Creative Commons (e.g.&nbsp;CC-BY)</strong> – common for educational material and data</p>
+<p>Some popular licenses include:</p>
+<ul>
+<li><strong>MIT License</strong> – very open and permissive</li>
+<li><strong>GPL (General Public License)</strong> – requires derived code to also be open</li>
+<li><strong>Creative Commons (e.g.&nbsp;CC-BY)</strong> – common for educational material and data</li>
+</ul>
 <blockquote class="blockquote">
 <p>🧭 You can explore license types at <a href="https://choosealicense.com">choosealicense.com</a></p>
 </blockquote>
@@ -2329,17 +2334,17 @@ You can upload your macro scripts, images, and tutorials so others can use and c
 <h2 class="anchored" data-anchor-id="troubleshooting">🛠️ Troubleshooting</h2>
 <p>Writing macros is a learning process, and errors are very normal! When something goes wrong, ImageJ usually gives you an error message that helps you figure out what’s wrong.</p>
 <ul>
-<li><p>*Spelling** — Make sure all function names (like <code>run</code>, <code>Dialog.create</code>) and variable names are spelled correctly.</p></li>
-<li><p>*Brackets** — Check that every opening <code>(</code>, <code>{</code>, or <code>[</code> has a matching closing one.</p></li>
-<li><p>*Capitalization** — <code>Dialog.getString()</code> is not the same as <code>dialog.getstring()</code> — ImageJ is case-sensitive!</p></li>
-<li><p>*Semicolons** — Most lines must end with a <code>;</code>. Forgetting one is one of the most common causes of errors.</p></li>
-<li><p>*Quotes for Strings** — Strings must be wrapped in double quotes: <code>"Hello"</code> not <code>Hello</code>.</p></li>
-<li><p>*Line Numbers in Errors<strong> — The error message usually tells you what line it occurred on, </strong>but it’s not always exact** — check the lines just above and below too.</p></li>
+<li><p><strong>Spelling</strong> — Make sure all function names (like <code>run</code>, <code>Dialog.create</code>) and variable names are spelled correctly.</p></li>
+<li><p><strong>Brackets</strong> — Check that every opening <code>(</code>, <code>{</code>, or <code>[</code> has a matching closing one.</p></li>
+<li><p><strong>Capitalization</strong> — <code>Dialog.getString()</code> is not the same as <code>dialog.getstring()</code> — ImageJ is case-sensitive!</p></li>
+<li><p><strong>Semicolons</strong> — Most lines must end with a <code>;</code>. Forgetting one is one of the most common causes of errors.</p></li>
+<li><p><strong>Quotes for Strings</strong> — Strings must be wrapped in double quotes: <code>"Hello"</code> not <code>Hello</code>.</p></li>
+<li><p><strong>Line Numbers in Errors</strong> — The error message usually tells you what line it occurred on, <strong>but it’s not always exact</strong> — check the lines just above and below too.</p></li>
 <li><p><strong>Start small</strong> — If you’re stuck, comment out sections of your macro and run it in smaller chunks.</p></li>
 <li><p><strong>Use <code>print()</code> for debugging</strong> — You can print variables to the log to see what values are being stored.</p></li>
 <li><p>use <strong>wait()</strong> to slow down the macro if it is running too fast. This can help you see what is happening at each step. Is useful for debugging and for running your analysis.</p></li>
-<li><p>If you don’t know where to start, or how to write a piece of code, start by using the macro recorder.The macro recorder will record your actions in FIJI and give you a starting point.</p></li>
-<li><p>Before running on a full dataset, make sure the macro works on a single image.</p></li>
+<li><p>If you don’t know where to start, or how to write a piece of code, start by using the <strong>macro recorder</strong>. The macro recorder will record your actions in FIJI and give you a starting point.</p></li>
+<li><p>Before running on a full dataset, make sure the macro works on a <strong>single image</strong>.</p></li>
 <li><p>If your macro is running <strong>slowly</strong>, restart FIJI or your computer to clear memory. Often macros run faster when you have less open, so if you have images building up that do not close, add lines of code that close the image before looping to the next image.</p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled" title="">
@@ -2360,7 +2365,7 @@ Note
 <section id="a-note-about-.lif-files" class="level2">
 <h2 class="anchored" data-anchor-id="a-note-about-.lif-files">📦 A note about .lif files</h2>
 <p>If you have .lif files, these need to be converted to individual .tif images prior to batch processing.</p>
-<p>If you are using .lif files, you can use the <code>Lif-to-Tif</code> macro to convert them to .tif files. This macro will open the .lif file and save each image in the file as a separate .tif file. This macro was created by Alexandre Hego: alexandre.hego@uliege.be. I have added this macro to my GitHub page for ease of use.</p>
+<p>If you are using .lif files, you can use the <code>Lif-to-Tif</code> macro to convert them to .tif files. This macro will open the .lif file and save each image in the file as a separate .tif file. This macro was created by Alexandre Hego: alexandre.hego@uliege.be. It works really well for .lif project files, including .lif files with tilescans. I have added this macro to my GitHub page for accessibility <a href="https://github.com/MarnieMaddock/Lif-to-Tif">Lif-to-Tif</a>.</p>
 <hr>
 </section>
 <section id="explore-my-macro-collection" class="level2">

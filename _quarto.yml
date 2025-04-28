@@ -4,6 +4,8 @@ project:
 
 website:
   title: "ImageJ Macro Workshop"
+  site-url: "https://marniemaddock.github.io/FIJI-macro-tutorial/FIJI-macro-tutorial.html"
+  description: "Learn how to automate or semi-automate image analysis in ImageJ and FIJI using ImageJ/FIJI macros with this beginner-friendly guide."
   sidebar:
     style: floating
 

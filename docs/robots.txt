@@ -1,1 +1,1 @@
-Sitemap: https://marniemaddock.github.io/FIJI-macro-tutorial/FIJI-macro-tutorial.html/sitemap.xml
+Sitemap: https://marniemaddock.github.io/FIJI-macro-tutorial/sitemap.xml

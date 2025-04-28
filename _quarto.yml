@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+  - google77395b81a4e5778b.html
 
 website:
   title: "ImageJ Macro Workshop"
